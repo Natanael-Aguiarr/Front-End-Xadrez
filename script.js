@@ -1,16 +1,19 @@
 $(document).ready(function(){
     $("#menu-container").load("menu.html");
   });
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
 
-  function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-      menuMobile.classList.remove('open');
-      document.querySelector(".icon").src="img/menu_white_36dp.svg";
+menuBtn.addEventListener("click", (e) =>{
+    navLinks.classList.toggle("open");
+    
+    const isOpen = navLinks.classList.contains("open");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
 
-    } else {
-      menuMobile.classList.add('open');
-      document.querySelector(".icon").src="img/close_white_36dp.svg";
+navLinks.addEventListener("click", (e) => {
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
 
-    }
-  }
