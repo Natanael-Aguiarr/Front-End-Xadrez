@@ -113,8 +113,6 @@ nav {
     color: white;
     font-size: 1.7rem;
     font-weight: 600;
-    
-    
   }
   
   .nav_logo .logo .logo2 {
@@ -148,6 +146,7 @@ nav {
     display: block;
     
 }
+
 .dropdown:hover  .dropdown-menu {
     display: block;
     
@@ -204,18 +203,13 @@ nav {
   height: 260px;
   font-size: 40px;
   text-shadow: 20px 20px 20px #000, 20px 20px 20px #000, 20px 20px 20px #000;
-
-
 }
 .texto2 {
   /* text-align: justify; */
   width: 500px;
   height: 400px;
   font-size: 48px;
-  
   text-shadow: 20px 20px 20px #000, 20px 20px 20px #000, 20px 20px 20px #000;
-
-
 }
 
 
@@ -589,8 +583,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 5% 15%;
   border-radius: 20px;
-}
-}
+}}
 .btn {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
@@ -633,6 +626,13 @@ nav {
 .menu .box-container .box img {
 width: 400px;
 height: 350px;
+filter: grayscale(100%);
+transition: all 1s;
+}
+
+.menu .box-container .box img:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
 }
 
 /*Depoimento1
@@ -1403,6 +1403,7 @@ height: 350px;
   width: 800px;
   
 }
+
 footer {
   background-color: #333;
   color: white;
