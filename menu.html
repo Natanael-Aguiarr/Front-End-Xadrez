@@ -1,73 +1,182 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png">
-   
-    <title>Xadrez para TDAH</title>
-    <link rel="stylesheet" href="sty.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
 <body>
-    
-    <nav>
-        <div class="nav_header">
-            <div class="nav_logo">
-                <a class="logo"><div class="logo1">X<span>a</span>d<span>r</span>e<span>z</span> </div>
-                    <div class="logo2">p<span>a</span>r<span>a</span></div>
-                    <div class="logo3">T<span>D</span>A<span>H</span></div>
-                </a>
-            </div>
-        <div class="nav_menu_btn" id="menu-btn">
-        <i class="ri-menu-line"></i>
-    </div>
-    </div>
+  <header class="header">
+    <nav class="header__nav" aria-label="Main Navigation">
+      <div class="header__nav-container">
+        <a
+          href="index.html"
+          class="header__logo"
+          aria-label="Xadrez para TDAH - Página inicial"
+        >
+          <div class="logo">
+            Xadrez <br />
+            para <br />
+            TDAH
+          </div>
+        </a>
+        <button
+          class="header__menu-button"
+          id="menu-btn"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        >
+          <!-- Ícone do Burger Menu -->
+          <span class="menu-btn-icon"></span>
+        </button>
+      </div>
 
-    <ul class="nav_links" id="nav-links">
-        <li class="dropdown"><a href="index.html">Início</a>
-            <div class="dropdown-menu"></div></li>
-        <li class="dropdown"><a href="part2.html">Jogar</a>
-            <div class="dropdown-menu">
-                <a href="https://www.chess.com/"target="_blank">Chess.com</a>
-               
-            </div></li>
-        <li class="dropdown"><a href="part3.html">Aprender</a>
-            <div class="dropdown-menu">
-                <a href="iniciante.html">Iniciante</a>
-                <a href="intermediário.html">Intermediário</a>
-                <a href="avancado.html">Avançado</a>
-            </div>
+      <ul class="nav__links" id="nav-links" role="menu">
+        <li class="nav__item" role="none">
+          <a href="index.html" class="nav__link" role="menuitem">Início</a>
         </li>
-        <li class="dropdown"><a href="part4.html">TV</a>
-            <div class="dropdown-menu">
-                <a href="https://drive.google.com/drive/folders/1egO427xG3J6UjJ9GPf9VlpDroAYTBe5g?usp=drive_link" target="_blank">Filmes <span>Parte-1</span></a>
-                <a href="https://drive.google.com/drive/folders/1VzRYkEi-ZQcrv4G_UNC01BCXEL5t_aJ6?usp=drive_link" target="_blank">Filmes <span>Parte-2</span></a>
-            </div></li>
-        <li class="dropdown"><a href="part5.html">Fórum</a>
-            <div class="dropdown-menu">
-                <a href="https://chat.whatsapp.com/FI6G4y3W3YOBPnsbfK1hdx" target="_blank">WhatsApp</a>
-                
-            </div></li>
-        <li class="dropdown"><a href="part6.html">Depoimentos</a>
-            <div class="dropdown-menu">
-                <a href="depoimento.html">Depoimento 1</a>
-                <a href="depoimento2.html">Depoimento 2</a>
-                <a href="depoimento3.html">Depoimento 3</a>
-            </div></li>
-        <li class="dropdown"><a href="part7.html">Sobre</a>
-            <div class="dropdown-menu">
-                <a href="part7.html">Sobre nós</a>
-               
-            </div></li>
-    </ul>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part2.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Jogar</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a
+                href="https://www.chess.com/"
+                target="_blank"
+                class="dropdown__link"
+                role="menuitem"
+                >Chess.com</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part3.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Aprender</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a href="iniciante.html" class="dropdown__link" role="menuitem"
+                >Iniciante</a
+              >
+            </li>
+            <li class="dropdown__item" role="none">
+              <a
+                href="intermediário.html"
+                class="dropdown__link"
+                role="menuitem"
+                >Intermediário</a
+              >
+            </li>
+            <li class="dropdown__item" role="none">
+              <a href="avancado.html" class="dropdown__link" role="menuitem"
+                >Avançado</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part4.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >TV</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a
+                href="https://drive.google.com/drive/folders/1egO427xG3J6UjJ9GPf9VlpDroAYTBe5g?usp=drive_link"
+                target="_blank"
+                class="dropdown__link"
+                role="menuitem"
+              >
+                Filmes <span>Parte-1</span>
+              </a>
+            </li>
+            <li class="dropdown__item" role="none">
+              <a
+                href="https://drive.google.com/drive/folders/1VzRYkEi-ZQcrv4G_UNC01BCXEL5t_aJ6?usp=drive_link"
+                target="_blank"
+                class="dropdown__link"
+                role="menuitem"
+              >
+                Filmes <span>Parte-2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part5.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Fórum</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a
+                href="https://chat.whatsapp.com/FI6G4y3W3YOBPnsbfK1hdx"
+                target="_blank"
+                class="dropdown__link"
+                role="menuitem"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part6.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Depoimentos</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a href="depoimento.html" class="dropdown__link" role="menuitem"
+                >Depoimento 1</a
+              >
+            </li>
+            <li class="dropdown__item" role="none">
+              <a href="depoimento2.html" class="dropdown__link" role="menuitem"
+                >Depoimento 2</a
+              >
+            </li>
+            <li class="dropdown__item" role="none">
+              <a href="depoimento3.html" class="dropdown__link" role="menuitem"
+                >Depoimento 3</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a
+            href="part7.html"
+            class="nav__link"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Sobre</a
+          >
+          <ul class="dropdown dropdown--menu" role="menu">
+            <li class="dropdown__item" role="none">
+              <a href="part7.html" class="dropdown__link" role="menuitem"
+                >Sobre nós</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-    <script src="script.js"></script>
-    
-    
-    
+  </header>
 </body>
-</html>
-

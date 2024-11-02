@@ -1,100 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon" />
     <title>Xadrez para TDAH</title>
-    <link rel="stylesheet" href="sty.css">
-    <link rel="stylesheet" href=" ('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
+  </head>
 
-<body>
-    <div id="menu-container"></div>
-    <div class="header-content">
+  <body>
+    <header class="nav">
+      <nav id="menu-container" class="nav__menu">
+        <!-- Menu de navegação (se necessário) -->
+      </nav>
+    </header>
 
-        <main class="inicio" id="inicio">
-            <img class="imagem-fundo" src="img/fundo1.jpg" alt="imagem de um peão ">
-            <div class="frases">
-                <p class="texto1">SEJA BEM-VINDO </p>
-                <p class="texto2">Estamos muito felizes em recebê-lo em nossa comunidade dedicada a pessoas com
-                    Transtorno do Déficit de Atenção com Hiperatividade. </p>
-            </div>
-        </main>
-        <section class="sobre" id="sobre">
-            <img class="conversando" src="img/chess-159693_1920.png" alt="">
-            <div class="frases2">
+    <main>
+      <section class="section--inicio" id="inicio">
+        <img
+          class="section--inicio__background-image"
+          src="img/fundo1.jpg"
+          alt="imagem de um peão"
+        />
+        <div class="section--inicio__content">
+          <h1 class="section--inicio__title">SEJA BEM-VINDO</h1>
+          <p class="section--inicio__text">
+            Estamos muito felizes em recebê-lo em nossa comunidade dedicada a
+            pessoas com Transtorno do Déficit de Atenção com Hiperatividade.
+          </p>
+        </div>
+      </section>
 
+      <section class="section--sobre" id="sobre">
+        <img
+          class="section--sobre__image"
+          src="img/chess-159693_1920.png"
+          alt="Imagem de pessoas jogando xadrez"
+        />
+        <div class="section--sobre__content">
+          <p class="section--sobre__text">
+            Aqui você aprenderá tudo sobre o jogo de xadrez desde o nível básico
+            ao mais avançado, além de ter à sua disposição uma biblioteca de
+            livros e de filmes enxadrísticos para se divertir e aprender ainda
+            mais.
+          </p>
+          <p class="section--sobre__text">
+            Você também encontrará informações científicas sobre os benefícios
+            do xadrez para o cérebro e o desenvolvimento cognitivo. Descubra
+            como esse jogo milenar é uma terapia eficaz para o TDAH, junte-se a
+            nós e explore o mundo do xadrez que tanto tem a nos ensinar sobre a
+            vida.
+          </p>
+        </div>
+      </section>
 
-                <p class="texto3">Aqui você aprenderá tudo sobre o jogo de xadrez desde o nível básico ao mais avançado,
-                    além de ter à sua disposição uma biblioteca de livros e de filmes enxadrísticos para se divertir e
-                    aprender ainda mais.
+      <section class="section--sobre2" id="sobre2">
+        <img
+          class="section--sobre2__image"
+          src="img/chess-3413424_1920.png"
+          alt="Imagem de uma dama"
+        />
+        <div class="section--sobre2__content">
+          <h2 class="section--sobre2__title">O Xadrez</h2>
+          <p class="section--sobre2__text">
+            O xadrez é um jogo de tabuleiro que combina estratégia, lógica e
+            habilidade mental. Disputado por dois jogadores, cada um controla 16
+            peças distintas, com o objetivo de dar xeque-mate ao rei adversário,
+            ou seja, colocar o rei em uma posição em que não possa ser protegido
+            de um ataque.
+          </p>
+          <p class="section--sobre2__text">
+            O xadrez, muito além de um jogo, é uma ferramenta poderosa para o
+            desenvolvimento cognitivo, podendo melhorar a concentração, a
+            memória, a tomada de decisões e a autoestima de crianças e adultos
+            com TDAH.
+          </p>
+        </div>
+      </section>
 
-                <p class="texto4"> Você também encontrará informações científicas sobre os benefícios do xadrez para o
-                    cérebro e o desenvolvimento cognitivo. Descubra como esse jogo milenar é uma terapia eficaz para o
-                    TDAH,
-                    junte-se a nós e explore o mundo do xadrez que tanto tem a nos ensinar sobre a vida.</p>
+      <section class="section--falando" id="falando">
+        <div class="section--falando__container">
+          <div class="section--falando__video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AYWhn31ZBx0?si=S_nDH4kOMqm8S6bD"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <article class="section--falando__content">
+          <h2 class="section--falando__title">O que é TDAH?</h2>
+          <p class="section--falando__text">
+            TDAH, ou Transtorno do Déficit de Atenção com Hiperatividade, é uma
+            condição neurológica que se manifesta através de sintomas como
+            desatenção, hiperatividade e impulsividade. Pessoas com TDAH podem
+            ter dificuldade em manter o foco, organizar tarefas e controlar
+            impulsos.
+          </p>
+        </article>
+      </section>
+    </main>
 
-
-            </div>
-
-        </section>
-
-        <section class="sobre2" id="sobre2">
-            <img class="conversando" src="img/chess-3413424_1920.png" alt="imagem de um dama ">
-            <div class="frases2">
-                <h1 class="titulo8">
-                    O Xadrez
-                </h1>
-                <BR></BR>
-                <p class="texto3">O xadrez é um jogo de tabuleiro que combina estratégia, lógica e habilidade mental.
-                    Disputado por dois jogadores, cada um controla 16 peças distintas, com o objetivo de dar xeque-mate
-                    ao
-                    rei adversário, ou seja, colocar o rei em uma posição em que não possa ser protegido de um ataque.
-
-
-
-                <p class="texto4">
-                    O xadrez, muito além de um jogo, é uma ferramenta poderosa para o desenvolvimento cognitivo, podendo
-                    melhorar a concentração, a memória, a tomada de decisões e a autoestima de crianças e adultos com
-                    TDAH.
-                </p>
-
-
-            </div>
-
-        </section>
-        <section class="falando" id="falando">
-            <div class="container">
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AYWhn31ZBx0?si=S_nDH4kOMqm8S6bD"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-            </div>
-            <div class="frases3">
-
-                <h1 class="titulo7">O que é TDAH ? </h1>
-                <p class="texto7">
-                    TDAH, ou Transtorno do Déficit de Atenção com Hiperatividade, é uma condição
-                    neurológica que se manifesta através de sintomas como desatenção, hiperatividade e impulsividade.
-                    Pessoas com TDAH podem ter dificuldade em manter o foco, organizar tarefas e controlar impulsos.</p>
-
-            </div>
-    </div>
-    </section>
-    <footer>
-        @108natan | @deyvid_luaa
+    <footer class="footer">
+      <p>&copy; @108natan | @deyvid_luaa</p>
     </footer>
-    
-    <script src="script.js"></script>
-    
-    
-    
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
