@@ -270,7 +270,7 @@ body {
 .dropdown__item:hover {
   background-color: #5e5e5e;
   transition: all 0.7s;
-  
+  border-radius: 5px;
 }
 .dropdown__link {
   color: #fff;
