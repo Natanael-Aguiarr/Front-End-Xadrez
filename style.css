@@ -235,7 +235,7 @@ body {
 
 .nav__links {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -246,6 +246,10 @@ body {
 .nav__link {
   color: #fff;
   text-decoration: none;
+}
+.nav__link:hover {
+  color: #b3b3b3;
+  font-size: 17px;
 }
 
 .dropdown--menu {
@@ -261,8 +265,13 @@ body {
 
 .dropdown__item {
   padding: 0.5rem 0;
+  transition: all 0.7s;
 }
-
+.dropdown__item:hover {
+  background-color: #5e5e5e;
+  transition: all 0.7s;
+  
+}
 .dropdown__link {
   color: #fff;
   text-decoration: none;
@@ -297,7 +306,7 @@ body {
 
 /* Mostra o submenu quando aria-expanded está ativo */
 .nav__item--dropdown > .nav__link[aria-expanded="true"] + .dropdown--menu {
-  display: block;
+  display: block; 
 }
 
 /* Estilos do menu no mobile */
@@ -316,7 +325,7 @@ body {
   transition: background-color 0.3s ease;
   display: flex;
   justify-content: center;
- 
+  
 }
 
 /* Configura as linhas superior e inferior */
@@ -328,6 +337,7 @@ body {
   height: 2px;
   background-color: white;
   transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+  
 }
 
 /* Linha superior */
@@ -360,12 +370,9 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  filter: grayscale(100%);
 }
-
-
 .box {
-  background-color: #fff;
+  background-color: #dddcdc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -379,6 +386,8 @@ body {
   height: 150px; /* Define uma altura fixa para todas as imagens */
   object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorção */
   display: block;
+  filter: grayscale(100%);
+  transition: all 1s;
 }
 
 .box p {
@@ -404,6 +413,10 @@ body {
   transform: scale(1.05);
 }
 
+.box img:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
+}
 
 
 /* Estilo para o container principal da página */
@@ -420,7 +433,7 @@ body {
 .nick4,
 .nick5,
 .nick6 {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Estilos para cada bloco de conteúdo */
@@ -442,14 +455,16 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 .ntexto2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   color: #ddd;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 /* Estilos para o texto dos parágrafos */
@@ -468,7 +483,9 @@ body {
 
 /* Estilos para citações em itálico */
 .ntexto3-2-2,
-.ntexto4-2-2 {
+.ntexto4-2-2,
+.ntexto4-2,
+.ntexto6 {
   font-size: 1rem;
   font-style: italic;
   color: #b3b3b3;
@@ -512,7 +529,7 @@ body {
 .gab2,
 .gab3,
 .gab5 {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Estilos para cada bloco de conteúdo */
@@ -532,14 +549,16 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 .gtexto2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   color: #ddd;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 /* Estilos para o texto dos parágrafos */
@@ -599,7 +618,7 @@ body {
 .josue5,
 .josue6,
 .josue7 {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Alinhamento do conteúdo */
@@ -622,14 +641,16 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 .jtexto2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   color: #ddd;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 25px 25px 25px #000, 25px 25px 25px #000, 25px 25px 25px #000;
 }
 
 /* Estilos para parágrafos */
@@ -798,6 +819,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 10;
+    
   }
 
   .nav__links[aria-expanded="true"] {
@@ -819,5 +841,6 @@ body {
 
   .nav__item--dropdown > .nav__link[aria-expanded="true"] + .dropdown--menu {
     display: block;
+    
   }
 }
