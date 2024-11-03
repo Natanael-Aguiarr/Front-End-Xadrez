@@ -96,6 +96,11 @@ body {
   max-width: 200px;
   height: auto;
   margin-bottom: 1.5rem;
+  transition: all 2s;
+}
+.section--sobre__image:hover{
+  transform: rotate(360deg);
+  transition: all 2s;
 }
 
 .section--sobre__content {
@@ -124,6 +129,11 @@ body {
   max-width: 400px;
   height: auto;
   margin-bottom: 1.5rem;
+  transition: all 2s;
+}
+.section--sobre2__image:hover{
+  transform: rotate(360deg);
+  transition: all 2s;
 }
 
 .section--sobre2__content {
