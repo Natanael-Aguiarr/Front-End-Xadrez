@@ -910,6 +910,41 @@ body {
 	justify-content: center;
 }
 
+/*paginas aprender*/
+.box-container2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 3rem;
+	text-align: center;
+	margin-top: 10%;
+	
+	
+  }
+  .menu2 .box-container2 .box {
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding:3rem;
+	cursor: pointer;
+	background-color: #141414   ;
+	border-radius:3%;
+  }
+  
+  
+  .menu2 .box-container2 .box:hover {
+	background-color: #080808;
+	cursor: default;
+	transition:all 0.8s;
+  }
+  .menu2 .box-container2 .box img {
+  width: 400px;
+  height: 350px;
+  filter: grayscale(100%);
+  transition: all 1s;
+  }
+
+
+
+
 /* Responsividade */
 @media (min-width: 768px) {
 	.profile {
