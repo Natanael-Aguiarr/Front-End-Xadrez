@@ -917,30 +917,87 @@ body {
 
 .box-container-grid {
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));; /* 3 colunas de largura igual */
-    gap: 20px; /* Espaçamento entre os itens */
-
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));;
 }
 .box-grid {
-	margin: 10%;
+	margin: 16% 5%;
+	/*position: relative;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/ /* Centraliza o conteúdo horizontalmente */
 
 }
-.box-grid iframe {
-	width: 90%;
-	height: 120%;
-	border: none;
+iframe {
+	width: 80%;
+	height: 100%;
+	border-radius: 10px;
 	/*background-color: lightblue;
     padding: 20px;*/
 	
 }
 
-.box-grid a{
-	color: yellow;
-	display: flex;
-	justify-content: center;
+.title {
 	
-	
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+	font-weight: 400;
+    text-align: center;
+    width: 80%; /* Define uma largura para ajudar na centralização */
+    display: inline-block; /* Garante que o link se comporte como um botão */
+     /* Espaço entre o botão e o iframe */
 }
+
+.btn-concluido {
+	background-color: #387772;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 10px;
+	text-align: center;
+    display: flex;           /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center;     /* Centraliza o texto verticalmente */
+    width: 80%; 
+  }
+  
+  .btn-concluido.completed {
+	background-color: #2f9632;
+  }
+  
+  .circle-container {
+	
+	position: fixed;
+	top: 20px;   /* Ajuste o valor conforme necessário para alinhar ao topo */
+	right: 5px; /* Ajuste o valor conforme necessário para alinhar à direita */
+	display: inline-block;
+	z-index: 10; /* Certifique-se de que ele fique sobre outros elementos, se necessário */
+	margin-top:13%;
+	
+  }
+  
+  svg {
+	transform: rotate(-90deg);
+  }
+  
+  .percentage-text {
+	position: absolute;
+	top: 62%;
+	left: 53%;
+	transform: translate(-50%, -100%);
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #d4e6d4;
+  }
+  
 
 
 
@@ -1038,7 +1095,9 @@ body {
 		left: 0;
 		width: 100%;
 		z-index: 10;
-
+	}
+	.circle-container {
+		margin-top: 25%;
 	}
 
 	.nav__links[aria-expanded="true"] {
@@ -1061,5 +1120,24 @@ body {
 	.nav__item--dropdown>.nav__link[aria-expanded="true"]+.dropdown--menu {
 		display: block;
 
+	}
+}
+
+@media (max-width: 1100px) {
+
+	.circle-container {
+		margin-top: 15%;
+	}
+}
+@media (max-width: 850px) {
+
+	.circle-container {
+		margin-top: 20%;
+	}
+}
+@media (max-width: 630px) {
+
+	.circle-container {
+		margin-top: 30%;
 	}
 }

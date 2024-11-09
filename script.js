@@ -61,3 +61,71 @@ $(document).ready(function() {
 	});
 });
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	// Carrega o progresso salvo ao carregar a página
+	loadProgress();
+	updateGlobalProgress(); // Atualiza o progresso com base no estado salvo
+  });
+  
+  function markCompleted(button) {
+	// Alterna a classe e o texto do botão
+	if (button.classList.contains('completed')) {
+		button.classList.remove('completed');
+		button.textContent = 'Concluir';
+	} else {
+		button.classList.add('completed');
+		button.textContent = 'Concluído';
+	}
+  
+	// Salva o progresso atual
+	saveProgress();
+	updateGlobalProgress();
+  }
+  
+  function saveProgress() {
+	// Salva o estado de cada botão (completo ou não) no localStorage
+	const buttons = document.querySelectorAll('.btn-concluido');
+	const progressData = Array.from(buttons).map(button => button.classList.contains('completed'));
+	localStorage.setItem('progress', JSON.stringify(progressData));
+  }
+  
+  function loadProgress() {
+	// Recupera o progresso do localStorage e aplica aos botões
+	const progressData = JSON.parse(localStorage.getItem('progress'));
+  
+	if (progressData) {
+		const buttons = document.querySelectorAll('.btn-concluido');
+		buttons.forEach((button, index) => {
+			if (progressData[index]) {
+				button.classList.add('completed');
+				button.textContent = 'Concluído';
+			} else {
+				button.classList.remove('completed');
+				button.textContent = 'Concluir';
+			}
+		});
+	}
+  }
+  
+  function updateGlobalProgress() {
+	const completedButtons = document.querySelectorAll('.btn-concluido.completed');
+	const totalButtons = document.querySelectorAll('.btn-concluido').length;
+  
+	// Calcula a porcentagem de progresso
+	const percentage = Math.round((completedButtons.length / totalButtons) * 100);
+  
+	// Atualiza o texto de porcentagem
+	const percentageText = document.getElementById('percentage-text');
+	percentageText.textContent = `${percentage}%`;
+  
+	// Atualiza o círculo de progresso
+	const circle = document.querySelector('.progress-ring');
+	const radius = circle.r.baseVal.value;
+	const circumference = 2 * Math.PI * radius;
+	const offset = circumference - (percentage / 100) * circumference;
+  
+	circle.style.strokeDashoffset = offset;
+  }
+  
