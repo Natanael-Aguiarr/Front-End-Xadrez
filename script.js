@@ -74,10 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (button.classList.contains('completed')) {
 		button.classList.remove('completed');
 		button.textContent = 'Concluir';
+		 // Toca o som de marcação de conclusão
+		 const markSound = document.getElementById('mark-sound');
+		 markSound.play();
 	} else {
 		button.classList.add('completed');
 		button.textContent = 'Concluído';
 	}
+	 // Toca o som de marcação de conclusão
+	 const markSound = document.getElementById('mark-sound');
+	 markSound.play();
+	
   
 	// Salva o progresso atual
 	saveProgress();
@@ -127,5 +134,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	const offset = circumference - (percentage / 100) * circumference;
   
 	circle.style.strokeDashoffset = offset;
+	 // Verifica se o progresso atingiu 100%
+	 const circleContainer = document.querySelector('.circle-container');
+	 const sound = document.getElementById('completion-sound');
+	 if (percentage === 100) {
+		 circleContainer.classList.add('completed-animation');
+		 document.getElementById('congratulations-modal').style.display = 'flex';
+		   // Toca o som de conclusão
+		   sound.play();
+	 } else {
+		 circleContainer.classList.remove('completed-animation');
+	 }
   }
+  function closeModal() {
+    document.getElementById('congratulations-modal').style.display = 'none';
+}
   
+	
