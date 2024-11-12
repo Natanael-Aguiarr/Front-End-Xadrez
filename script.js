@@ -136,6 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	circle.style.strokeDashoffset = offset;
 	 // Verifica se o progresso atingiu 100%
 	 const circleContainer = document.querySelector('.circle-container');
+	 
+
 	 const sound = document.getElementById('completion-sound');
 	 if (percentage === 100) {
 		 circleContainer.classList.add('completed-animation');
@@ -151,3 +153,99 @@ document.addEventListener('DOMContentLoaded', () => {
 }
   
 	
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Carrega o progresso salvo ao carregar a página 2
+    loadProgressPage2();
+    updateProgressForPage2(); // Atualiza o progresso com base no estado salvo
+});
+
+// Função para marcar um vídeo como concluído na página 2
+function markCompletedPage2(button) {
+    if (button.classList.contains('completed')) {
+        button.classList.remove('completed');
+        button.textContent = 'Concluir';
+    } else {
+        button.classList.add('completed');
+        button.textContent = 'Concluído';
+    }
+
+    // Salva o progresso atual
+    saveProgressPage2();
+    updateProgressForPage2(); // Atualiza o progresso da página
+}
+
+// Função para salvar o progresso dos vídeos da página 2
+function saveProgressPage2() {
+    const buttons = document.querySelectorAll('.btn-concluido');
+    const progressData = Array.from(buttons).map(button => button.classList.contains('completed'));
+    localStorage.setItem('progressPage2', JSON.stringify(progressData)); // Salva apenas para a página 2
+}
+
+// Função para carregar o progresso salvo da página 2
+function loadProgressPage2() {
+    const progressData = JSON.parse(localStorage.getItem('progressPage2'));
+
+    if (progressData) {
+        const buttons = document.querySelectorAll('.btn-concluido');
+        buttons.forEach((button, index) => {
+            if (progressData[index]) {
+                button.classList.add('completed');
+                button.textContent = 'Concluído';
+            } else {
+                button.classList.remove('completed');
+                button.textContent = 'Concluir';
+            }
+        });
+    }
+}
+
+// Função para atualizar o progresso da página 2
+function updateProgressForPage2() {
+    const completedButtons = document.querySelectorAll('.btn-concluido.completed');
+    const totalButtons = document.querySelectorAll('.btn-concluido').length;
+
+    // Calcula a porcentagem de progresso
+    const percentage = Math.round((completedButtons.length / totalButtons) * 100);
+
+    // Atualiza o texto de porcentagem
+    const percentageText = document.getElementById('percentage-text2');
+    percentageText.textContent = `${percentage}%`;
+
+    // Atualiza o círculo de progresso
+    const circle = document.querySelector('.progress-ring2');
+    const radius = circle.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (percentage / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+
+    // Exibir animação de conclusão ao atingir 100%
+    if (percentage === 100) {
+        document.getElementById('congratulations-modal').style.display = 'flex';
+        circle.classList.add('completed-animation'); // Exibe animação de conclusão
+        // Tocar som de "parabéns" aqui
+        document.getElementById('completion-sound').play();
+    } else {
+        document.getElementById('congratulations-modal').style.display = 'none';
+        circle.classList.remove('completed-animation'); // Remove animação quando não estiver 100%
+    }
+}
+
+// Função para fechar o modal de "Parabéns"
+function closeModal() {
+    document.getElementById('congratulations-modal').style.display = 'none';
+}
+
+// Tocar som sempre que marcar um vídeo como concluído
+function playMarkSound() {
+    document.getElementById('mark-sound').play();
+}
+

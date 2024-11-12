@@ -973,22 +973,20 @@ iframe {
 	background-color: #2f9632;
   }
   
-  .circle-container {
-	
+  .circle-container,  .circle-container2  {
 	position: fixed;
 	top: 20px;   /* Ajuste o valor conforme necessário para alinhar ao topo */
 	right: 5px; /* Ajuste o valor conforme necessário para alinhar à direita */
 	display: inline-block;
 	z-index: 10; /* Certifique-se de que ele fique sobre outros elementos, se necessário */
 	margin-top:13%;
-	
   }
   
   svg {
 	transform: rotate(-90deg);
   }
   
-  .percentage-text {
+  .percentage-text, .percentage-text2 {
 	position: absolute;
 	top: 62%;
 	left: 53%;
@@ -999,35 +997,42 @@ iframe {
   }
   
 
-  @keyframes glow {
+  @keyframes pulse {
 	0% {
-	  box-shadow: 0 0 10px #15be1a, 0 0 20px #15be1a, 0 0 30px #15be1a;
+	  stroke: #15be1a; /* Cor do círculo */
+	  stroke-width: 10; /* Largura inicial do traço */
+	  transform: scale(1); /* Tamanho original */
+	  filter: drop-shadow(0 0 10px #15be1a); /* Efeito de brilho */
 	}
 	50% {
-	  box-shadow: 0 0 20px #15be1a, 0 0 40px #15be1a, 0 0 50px #15be1a;
+	  stroke: #15be1a; /* Mantém a mesma cor */
+	  stroke-width: 20; /* Aumenta a largura do traço */
+	  transform: scale(1.2); /* Aumenta o tamanho */
+	  filter: drop-shadow(0 0 20px #15be1a); /* Aumenta o brilho */
 	}
 	100% {
-	  box-shadow: 0 0 10px #15be1a, 0 0 20px #15be1a, 0 0 30px #15be1a;
+	  stroke: #15be1a; /* Cor do círculo */
+	  stroke-width: 10; /* Largura do traço volta ao normal */
+	  transform: scale(1); /* Retorna ao tamanho normal */
+	  filter: drop-shadow(0 0 10px #15be1a); /* Efeito de brilho volta ao normal */
 	}
   }
   
-  @keyframes expand {
-	0% {
-	  transform: scale(1);
-	  
-	}
-	50% {
-	  transform: scale(1.1);
-	}
-	100% {
-	  transform: scale(1);
-	}
-  }
-  
+  /* Animação de pulso (aumentando e diminuindo o círculo) */
   .completed-animation {
-	animation: glow 1.5s infinite alternate, expand 1s ease-in-out;
-
+	animation: pulse 1.5s infinite alternate; /* Faz o círculo crescer e encolher */
   }
+  
+  
+  .progress-ring, .progress-ring {
+	transition: stroke-dashoffset 0.3s, stroke 0.3s;
+	transform-origin: center; /* A animação vai acontecer do centro */
+  }
+
+  
+
+
+ 
   
   /* Estilos para o quadro de parabéns */
 .modal {
