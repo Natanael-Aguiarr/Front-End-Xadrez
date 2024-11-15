@@ -1,4 +1,5 @@
-<body>
+<link rel="stylesheet" href="style.css">
+<body class="light-mode">
 	<header class="header">
 		<nav class="header__nav" aria-label="Main Navigation">
 			<div class="header__nav-container">
@@ -20,7 +21,7 @@
 					<a href="index.html" class="nav__link" role="menuitem">Início</a>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="part2.html" class="nav__link" role="menuitem" aria-haspopup="true"
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">Jogar</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
@@ -34,7 +35,7 @@
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="part3.html" class="nav__link" role="menuitem" aria-haspopup="true"
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">Aprender</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
@@ -49,7 +50,7 @@
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="part4.html" class="nav__link" role="menuitem" aria-haspopup="true"
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">TV</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
@@ -67,7 +68,7 @@
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="part5.html" class="nav__link" role="menuitem" aria-haspopup="true"
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">Fórum</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
@@ -81,7 +82,7 @@
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="part6.html" class="nav__link" role="menuitem" aria-haspopup="true"
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">Depoimentos</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
@@ -105,6 +106,11 @@
 						</ul>
 				</li>
 			</ul>
+			<button onclick="toggleMode()" id="themeToggle">
+				<span class="icon" id="themeIcon">🌞</span>
+			  </button>
+			  <button id="theme-toggle"></button>
+
 		</nav>
 	</header>
 </body>

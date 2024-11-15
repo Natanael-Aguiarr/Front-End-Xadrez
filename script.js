@@ -152,8 +152,49 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('congratulations-modal').style.display = 'none';
 }
   
-	
 
+// Carregar preferências do usuário ao abrir o site
+window.onload = function() {
+	// Carregar o tema salvo do localStorage ou definir o modo claro como padrão
+	const mode = localStorage.getItem('mode') || 'light-mode';
+	document.body.classList.add(mode); // Adicionar o tema ao body
+	updateThemeIcon(); // Atualizar ícone do tema
+  };
+  
+  // Alternar entre modo claro e escuro
+  function toggleMode() {
+	// Alternar entre as classes de modo claro e escuro
+	document.body.classList.toggle('dark-mode');
+	document.body.classList.toggle('light-mode');
+	
+	// Salvar a preferência de tema no localStorage
+	const mode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+	localStorage.setItem('mode', mode);
+	
+	// Atualizar o ícone do tema
+	updateThemeIcon();
+  }
+  
+  // Atualizar o ícone do tema
+  function updateThemeIcon() {
+	const themeIcon = document.getElementById('themeIcon');
+	if (document.body.classList.contains('dark-mode')) {
+	  themeIcon.textContent = '🌜'; // Ícone de Lua para o tema escuro
+	} else {
+	  themeIcon.textContent = '🌞'; // Ícone de Sol para o tema claro
+	}
+  }
+  
+  // Seleciona o botão de alternância de tema
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  
+  // Adiciona o evento de clique para alternar o tema
+  themeToggleBtn.addEventListener("click", toggleMode);
+  
+  
+
+  
+  
 
 
 
