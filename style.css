@@ -216,10 +216,235 @@ body.light-mode {
 	margin-bottom: 30px;
 }
 
+/* Seção Xadrez e TDAH */
+.section--xadrez-tdah {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--xadrez-tdah__image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--xadrez-tdah__image:hover {
+	transform: rotate(360deg);
+	transition: all 2s;
+  }
+  
+  .section--xadrez-tdah__content {
+	text-align: center;
+  }
+  
+  .section--xadrez-tdah__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--xadrez-tdah__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align: justify;
+  }
+  
+  /* Seção Concentração e Foco */
+  .section--concentracao-foco {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--concentracao-foco__image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--concentracao-foco__image:hover {
+	transform: rotate(360deg);
+	transition: all 2s;
+  }
+  
+  .section--concentracao-foco__content {
+	text-align: center;
+  }
+  
+  .section--concentracao-foco__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--concentracao-foco__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align: justify;
+  }
+  
+  /* Seção Controle da Impulsividade */
+  .section--controle-impulsividade {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--controle-impulsividade__image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--controle-impulsividade__image:hover {
+	transform: rotate(360deg);
+	transition: all 2s;
+  }
+  
+  .section--controle-impulsividade__content {
+	text-align: center;
+  }
+  
+  .section--controle-impulsividade__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--controle-impulsividade__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align: justify;
+  }
+  
+  /* Seção Desenvolvimento da Memória */
+  .section--desenvolvimento-memoria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--desenvolvimento-memoria__image {
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--desenvolvimento-memoria__image:hover {
+	transform: rotate(360deg);
+	transition: all 2s;
+  }
+  
+  .section--desenvolvimento-memoria__content {
+	text-align: center;
+  }
+  
+  .section--desenvolvimento-memoria__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--desenvolvimento-memoria__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align : justify;
+  }
+  
+  /* Seção Organização e Planejamento */
+  .section--organizacao-planejamento {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--organizacao-planejamento__image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--organizacao-planejamento__image:hover {
+	transform: scale(1.4);
+  }
+  
+  .section--organizacao-planejamento__content {
+	text-align: center;
+  }
+  
+  .section--organizacao-planejamento__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--organizacao-planejamento__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align: justify;
+  }
+  
+  /* Seção Redução da Ansiedade */
+  .section--reduzindo-ansiedade {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+  }
+  
+  .section--reduzindo-ansiedade__image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 1.5rem;
+	transition: all 2s;
+  }
+  
+  .section--reduzindo-ansiedade__image:hover {
+	transform: scale(1.4);
+  }
+  
+  .section--reduzindo-ansiedade__content {
+	text-align: center;
+  }
+  
+  .section--reduzindo-ansiedade__title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .section--reduzindo-ansiedade__text {
+	font-size: 1.1rem;
+	max-width: 700px;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	text-align: justify;
+  }
 
 /* Modo claro */
 body.light-mode {
-	color: #000000;
+	color: #1c1a1a;
 	background-color: #c2c2c2;
   }
   
@@ -307,6 +532,36 @@ body.light-mode .jtexto2 {
 	background-color: #e6dddd;
 	color: #222;
 }
+  /*parte do xadrez e tdah modo escuro*/
+  
+  body.light-mode .section--xadrez-tdah{
+	background-color: #c8c3c3;
+	color: #171414;
+  }
+  body.light-mode .section--concentracao-foco{
+	background-color: #bbb8b8;
+	color: #151414;
+  }
+  body.light-mode .section--controle-impulsividade{
+	background-color: #b3b2b2;
+	color: #060505;
+  }
+  body.light-mode .section--desenvolvimento-memoria{
+	background-color: #abaaaa;
+	color: #030202;
+  }
+  body.light-mode .section--organizacao-planejamento{
+	background-color: #a2a0a0;
+	color: #040404;
+  }
+  body.light-mode .section--reduzindo-ansiedade {
+	background-color: #9a9a9a;
+	color: #0c0b0b;
+  }
+  
+  /*fim da parter do xadrez e tdah modo escuro*/
+
+
 /*escuro */
 
 body.dark-mode {
@@ -325,7 +580,7 @@ body.dark-mode {
 	color: #fff;
   }
   body.dark-mode .section--sobre {
-	background-color: #2d2d2d;
+	background-color: #403f3f;
 	color: #fff;
   }
   
@@ -334,12 +589,12 @@ body.dark-mode {
   }
 
   body.dark-mode .section--sobre2 {
-	background-color: #333333;
+	background-color: #363636;
 	color: #fff;
   }
   
   body.dark-mode .section--falando {
-	background-color: #1a1a1a;
+	background-color: #2a2929;
 	color: #fff;
   }
   
@@ -347,6 +602,36 @@ body.dark-mode {
   body.dark-mode .section--falando__title {
 	color: #fff;
   }
+
+  /*parte do xadrez e tdah modo escuro*/
+  
+  body.dark-mode .section--xadrez-tdah{
+	background-color: #282828b3;
+	color: #fff;
+  }
+  body.dark-mode .section--concentracao-foco{
+	background-color: #1f1f1f;
+	color: #fff;
+  }
+  body.dark-mode .section--controle-impulsividade{
+	background-color: #1d1d1d;
+	color: #fff;
+  }
+  body.dark-mode .section--desenvolvimento-memoria{
+	background-color: #1514147a;
+	color: #fff;
+  }
+  body.dark-mode .section--organizacao-planejamento{
+	background-color: #151414;
+	color: #fff;
+  }
+  body.dark-mode .section--reduzindo-ansiedade {
+	background-color: #0606067e;
+	color: #fff;
+  }
+  
+  /*fim da parter do xadrez e tdah modo escuro*/
+ 
   body.dark-mode .ntexto1,.ntexto2,
 .gtexto1,.gtexto2,
 .jtexto1,.jtexto2 {
