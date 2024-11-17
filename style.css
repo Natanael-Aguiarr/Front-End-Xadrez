@@ -74,7 +74,7 @@ body.light-mode {
 	
 }
 .section--inicio__background-image:hover {
-	transform: scale(1.1);
+	transform: scale(1.5);
 }
 
 .section--inicio__content {
@@ -1624,6 +1624,7 @@ iframe {
 		align-items: flex-start;
 		gap: 2rem;
 		text-align: left;
+		
 	}
 
 	.profile-info {
@@ -1720,5 +1721,9 @@ iframe {
 
 	.circle-container {
 		margin-top: 30%;
+	}
+	.section--inicio {
+		display: flex;
+		flex-direction: column;
 	}
 }
