@@ -1528,6 +1528,59 @@ iframe {
     cursor: pointer;
 }
 
+#celebration-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.balloon {
+    position: absolute;
+    top: -100px; /* Inicia fora da tela */
+    width: 50px;
+    height: 70px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 50%;
+    animation: fallBalloon 5s linear infinite;
+    z-index: 1001;
+}
+
+@keyframes fallBalloon {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* Move para o final da tela */
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--confetti-color, red);
+    animation: fallConfetti 3s linear infinite;
+}
+
+@keyframes fallConfetti {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* Move para o final da tela */
+        opacity: 0;
+    }
+}
+
+
 
 /*paginas aprender*/
 /*

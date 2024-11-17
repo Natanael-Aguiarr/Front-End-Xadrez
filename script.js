@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		 document.getElementById('congratulations-modal').style.display = 'flex';
 		   // Toca o som de conclusão
 		   sound.play();
+		   showCelebration();
 	 } else {
 		 circleContainer.classList.remove('completed-animation');
 	 }
@@ -192,7 +193,46 @@ window.onload = function() {
   themeToggleBtn.addEventListener("click", toggleMode);
   
   
+  function showCelebration() {
+    const container = document.getElementById("celebration-container");
 
+    // Adicionar balões
+    for (let i = 0; i < 10; i++) {
+        const balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.left = `${Math.random() * 100}%`;
+        balloon.style.backgroundColor = getRandomColor();
+        container.appendChild(balloon);
+    }
+
+    // Adicionar confetes
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement("div");
+        confetti.className = "confetti";
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.top = `${Math.random() * 100}%`;
+        confetti.style.setProperty("--confetti-color", getRandomColor());
+        container.appendChild(confetti);
+    }
+
+    // Limpar após 5 segundos
+    setTimeout(() => {
+        container.innerHTML = "";
+    }, 5000);
+}
+
+// Gerar cores aleatórias
+function getRandomColor() {
+    const colors = ["#FF5733", "#33FF57", "#5733FF", "#F4FF33", "#FF33E4"];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+// Chamar ao completar
+function showCongratulationsModal() {
+    document.getElementById("congratulations-modal").style.display = "block";
+    document.getElementById("completion-sound").play();
+    showCelebration(); // Mostra a animação de balões e confetes
+}
   
   
 
