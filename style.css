@@ -1421,7 +1421,7 @@ iframe {
 	background-color: #2f9632;
   }
   
-  .circle-container,  .circle-container2  {
+  .circle-container {
 	position: fixed;
 	top: 20px;   /* Ajuste o valor conforme necessário para alinhar ao topo */
 	right: 5px; /* Ajuste o valor conforme necessário para alinhar à direita */
@@ -1434,7 +1434,7 @@ iframe {
 	transform: rotate(-90deg);
   }
   
-  .percentage-text, .percentage-text2 {
+  .percentage-text {
 	position: absolute;
 	top: 62%;
 	left: 53%;
@@ -1472,7 +1472,7 @@ iframe {
   }
   
   
-  .progress-ring, .progress-ring {
+  .progress-ring {
 	transition: stroke-dashoffset 0.3s, stroke 0.3s;
 	transform-origin: center; /* A animação vai acontecer do centro */
   }
@@ -1483,50 +1483,100 @@ iframe {
  
   
   /* Estilos para o quadro de parabéns */
+/* Estilo para o modal */
 .modal {
-    display: none; /* Oculto inicialmente */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
-    z-index: 1000;
-    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Oculto por padrão */
     justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-open {
+    overflow: hidden; /* Evita o scroll quando o modal está aberto */
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    border-radius: 15px;
     text-align: center;
-    width: 80%;
+    padding: 30px 20px;
     max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    color: white;
+    animation: scaleUp 0.5s ease-out;
 }
 
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+ 
 .modal-content h2 {
-    color: #15be1a;
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-out;
 }
 
 .modal-content p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
 }
 
-.modal-content button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #387772;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+.modal-content button {
+    background-color: #f1f5f3; /* Cor vibrante para o botão */
+    color: #013a04; /* Texto branco */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+.modal-content button:hover {
+    background-color: #6b6e6d; /* Cor de fundo do botão ao passar o mouse */
+	color: #fff;
+    transform: scale(1.1); /* Aumenta o botão levemente */
+}
+
+.modal-content button:active {
+    transform: scale(1); /* Quando clicado, o botão retorna ao tamanho normal */
+}
+
+
+
+
+
 
 #celebration-container {
     position: fixed;
@@ -1579,6 +1629,72 @@ iframe {
         opacity: 0;
     }
 }
+
+
+.btn-concluido2 {
+	background-color: #387772;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 10px;
+	text-align: center;
+    display: flex;           /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center;     /* Centraliza o texto verticalmente */
+    width: 80%; 
+  }
+  
+  .btn-concluido2.completed {
+	background-color: #2f9632;
+  }
+  
+  .circle-container2 {
+	position: fixed;
+	top: 20px;   /* Ajuste o valor conforme necessário para alinhar ao topo */
+	right: 5px; /* Ajuste o valor conforme necessário para alinhar à direita */
+	display: inline-block;
+	z-index: 10; /* Certifique-se de que ele fique sobre outros elementos, se necessário */
+	margin-top:13%;
+  }
+
+
+.progress-ring2 {
+    transition: stroke-dashoffset 0.3s, stroke 0.3s;
+}
+
+.percentage-text2 {
+    position: absolute;
+    top: 62%;
+    left: 53%;
+    transform: translate(-50%, -100%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d4e6d4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
