@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Segunda página: menu2.html -->
+<section class="menu-grid" id="menu5">
+    <div class="circle-container5">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring5" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text5" id="percentage-text5">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/04dNqEcKvV0?si=lWEpU3tnDiDAblml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">OS PRINCIPAIS XEQUES MATES DO XADREZ!</p>
+            <button class="btn-concluido5"   onclick="markCompleted5(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0LB-0xXGNTM?si=re848TS7EsJ1yOac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">APRENDA TODOS OS XEQUE-MATES ELEMENTARES
+            </p>
+            <button class="btn-concluido5"   onclick="markCompleted5(this)">Concluir</button>
+    </div>
+    </div>
+
+</section>
+
+<div id="congratulations-modal5" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p> Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal5()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+
+
+
+  <footer class="footer">
+		@108natan | @deyvid_luaa
+	</footer>
+    
+<script src="/iniciante/temasmate.js"></script>
+<script src="script.js" ></script>
+</body>
+</html>

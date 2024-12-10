@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Segunda página: menu2.html -->
+<section class="menu-grid" id="menu4">
+    <div class="circle-container4">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring4" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text4" id="percentage-text4">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yHb6RmkT7Eg?si=B5lUqnyINla87aa3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> OBJETIVO DO JOGO</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0M1-OrbcGFM?si=7fnYTdOTOVpaocET" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O TABULEIRO DE XADREZ</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LEEIIQ5VUO8?si=VX5AdZL2WsvUGq9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">NOME DAS PEÇAS</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xnSAW0HBzI8?si=yGxoxQhjLP3YDFDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">A DAMA</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YYN0TX4tu6s?si=Bp7mDNdsUhLpPXQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O REI </p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mi8FUob4KUE?si=gwMBCRTgfmOCjSCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">A TORRE</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhgaKzsCoKM?si=fGaSdbxC-_oi1CwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O BISPO</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zlTA4E6jmiQ?si=X7aprheYQP4wj_Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O CAVALO</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTxmC7GE0NU?si=uxY7ulyW5GlASlkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> O PEÃO</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmZ1WmvvTRA?si=WY9vVqOLXUarN59q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">CAPTURA EN PASSANT</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lItct7LQcAw?si=617Pt0VWz4upLTGl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">PROMOCAO DO PEAO</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JH7hjLnyRdQ?si=IRe8MKjV7fHBbX0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O ROQUE</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1bvIXsYNe5M?si=SNrj9-Gl4Y5KTdbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">OS 5 REQUISITOS PARA FAZER O ROQUE </p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LUDqcgY6Tkc?si=v2qUSXv7OAuhZkaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AS TRÊS FORMAS DE RESOLVER O XEQUE</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HGxL83yfkf4?si=3-o2uSIE3pBV0oQ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">RELÓGIO DE XADREZ</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/87HLdIVCJQE?si=XRe6gt1O1iGwS8qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">OS 5 CASOS DE EMPATE</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Eaurrin7lg?si=QnEQsycPYUOynlTX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">VALOR DAS PEÇAS DO XADREZ</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/atQhzGMMTEk?si=i-LYE82PIia4_ifC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">NOTAÇÃO ALGÉBRICA</p>
+            <button class="btn-concluido4"   onclick="markCompleted4(this)">Concluir</button>
+        </div>
+       
+    </div>
+</section>
+
+<div id="congratulations-modal4" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p> Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal4()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+
+
+
+  <footer class="footer">
+		@108natan | @deyvid_luaa
+	</footer>
+    
+<script src="/iniciante/regras.js"></script>
+<script src="script.js" ></script>
+</body>
+</html>
