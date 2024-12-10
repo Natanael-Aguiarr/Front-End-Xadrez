@@ -1041,23 +1041,17 @@ body.dark-mode {
 }
 
 /* Estilos para citações em itálico */
-.ntexto3-2-2,
-.ntexto4-2-2,
-.ntexto4-2,
-.ntexto6 {
+.ntexto3-2-2{
 	font-size: 1.5rem;
 	font-style: italic;
-	color: #b3b3b3;
 	max-width: 700px;
 	margin-top: 0.5rem;
 }
-body.light-mode .ntexto3-2-2,
-.ntexto4-2-2,
-.ntexto4-2,
-.ntexto6 {
-
+body.light-mode .ntexto3-2-2 {
 	color: #240d0d;
-	
+}
+body.dark-mode .ntexto3-2-2 {
+	color: #b3b3b3;
 }
 
 /* Estilos para imagens */
@@ -1141,17 +1135,13 @@ body.light-mode .ntexto3-2-2,
 .gtexto1 {
 	font-size: 2rem;
 	font-weight: 700;
-	
 	margin-bottom: 1.5rem;
-	
 }
 
 .gtexto2 {
 	font-size: 1.6rem;
 	font-weight: 600;
-	
 	margin-bottom: 3rem;
-
 }
 
 /* Estilos para o texto dos parágrafos */
@@ -1161,32 +1151,30 @@ body.light-mode .ntexto3-2-2,
 .gtexto5 {
 	font-size: 1.2rem;
 	line-height: 1.6;
-	
-	max-width: 800px;
-	margin-bottom: 1rem;
-}
-.gtexto3,
-.gtexto3-2,
-.gtexto3-3,
-.gtexto5 {
-	font-size: 1.2rem;
-	line-height: 1.6;
-	
 	max-width: 800px;
 	margin-bottom: 1rem;
 }
 
+
 /* Estilos para citações em itálico */
-.gtexto3-2-2 {
+.gtexto3-2-2-2,
+.gtexto3-2-2,  span {
 	font-size: 1.5rem;
 	font-style: italic;
-	color: #b3b3b3;
 	max-width: 700px;
 	margin-top: 0.5rem;
 }
-.gtexto3-2-2 {
+body.light-mode 
+.gtexto3-2-2-2,
+.gtexto3-2-2,  span {
 	color: #240d0d;
 }
+body.dark-mode 
+.gtexto3-2-2-2,
+.gtexto3-2-2,  span {
+	color: #b3b3b3;
+}
+
 
 
 /* Estilos para imagens */
@@ -1287,23 +1275,30 @@ body.light-mode .ntexto3-2-2,
 .jtexto3-2,
 .jtexto3-3,
 .jtexto5,
+.jtexto3-2-2,
 .jtexto6-2
  {
 	font-size: 1.2rem;
 	line-height: 1.6;
-	
 	max-width: 800px;
 	margin-bottom: 1rem;
 }
 
 /* Estilos para citações */
-.jtexto3-2-2,
-.jtexto4-2-2, .jtexto7, .jtexto4-2 {
+
+.jtexto4-2-2 {
 	font-size: 1.5rem;
 	font-style: italic;
-	
 	max-width: 700px;
 	margin-top: 0.5rem;
+}
+body.light-mode 
+.jtexto4-2-2 {
+	color: #240d0d;
+}
+body.dark-mode 
+.jtexto4-2-2 {
+	color: #b3b3b3;
 }
 
 /* Estilos para imagens */
@@ -1481,13 +1476,19 @@ body.light-mode .ntexto3-2-2,
 	/*text-shadow: 2px 2px 4px rgb(78, 77, 77);*/
 	font-size: 15px;
 }
+body.dark-mode .box-grid .title {
+	color: #ffffff;
+}
+body.light-mode .box-grid .title {
+	color: #030202;
+	font-weight: 800;
+}
 iframe {
 	width: 80%;
 	height: 100%;
 	border-radius: 10px;
 	/*background-color: lightblue;
     padding: 20px;*/
-	
 }
 
 .title {
