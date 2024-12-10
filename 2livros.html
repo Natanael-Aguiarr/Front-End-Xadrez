@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Página 9 -->
+<section class="menu-grid" id="menu14">
+    <div class="circle-container14">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring14" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text14" id="percentage-text14">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4igFgAA6b4M?si=pQyzutJkOjzLjggU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DICAS DE LIVROS PARA EVOLUIR NO XADREZ</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OgGW4W_CeqA?si=QL415LaCYUwPv5OK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">GRANDES LIVROS DE PARTIDAS</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Nu8SLyiV5Q?si=i_EaDHTOCRmmyN9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">LIVROS DE XADREZ EM PORTUGUÊS</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/obG-2mnHK80?si=QeNH1YesEKQgGNKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O MELHOR LIVRO DE XADREZ JÁ ESCRITO</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7vjMCE3HH80?si=FedQtdGWnYXlMpzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">3 GRANDES LIVROS POUCO CONHECIDOS</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FN0uaxvB40Y?si=-gjr3UMpFesG2uvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O MELHOR LIVRO DE XADREZ DE 2022</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j3E5cE3Z_NI?si=p_6Xw50QytwHHlcW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">MEUS 13 LIVROS DE XADREZ FAVORITOS - VERSÃO 2024</p>
+            <button class="btn-concluido14" onclick="markCompleted14(this)">Concluir</button>
+        </div>
+    </div>
+</section>
+
+<div id="congratulations-modal14" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal14()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+<footer class="footer">
+    @108natan | @deyvid_luaa
+</footer>
+
+<script src="/intermediario/livros1.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

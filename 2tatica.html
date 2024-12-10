@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Página 9 -->
+<section class="menu-grid" id="menu9">
+    <div class="circle-container9">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring9" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text9" id="percentage-text9">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Es1UC4Vyak?si=YEdRAA7jBCXJXzrL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">COMO CALCULAR NO XADREZ?</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KC5DY4mXFPI?si=uCLIegKvWtenGeSy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">2 TÉCNICAS PARA CALCULAR MELHOR NO XADREZ</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jwZFd81uiwc?si=nUcgmWRGQYobgWrz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">OS PRINCIPAIS TEMAS TÁTICOS DO XADREZ</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LCLzp9r7K4k?si=JESNNttyEu48tJ23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">COMO MELHORAR NO XADREZ FAZENDO TÁTICA NO CHESS.COM</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Vw8HildWuc?si=Fis6wRlsi5DSgpEP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">COMO MELHORAR NO XADREZ FAZENDO TÁTICA NO LICHESS</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uyDdkxZA56w?si=SjLnfGBoFSWKVVWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">EXERCÍCIOS TÁTICOS EXPLICADOS</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xXNthaqL9s4?si=n6SkxifOYiXPPCvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#1 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wcbco2ZcAJ4?si=GYsFWcZnDMXJvMfO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#2 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8U8TFvL55GE?si=UG-vPX7h45lJdwox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#3 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zvK8a6MCXv8?si=WofceYUYufFF1wBX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#4 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_gCUytfMZG0?si=Hcs6pFjZl4bDSA_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#5 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r_bOWM2uqCU?si=boNS2SvoXJ4PdgVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">#6 | RESOLVENDO EXERCÍCIOS DE TÁTICA - CHESS TEMPO</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t1Cp151Ef4w?si=oYoh8JcrszOshDqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">UM DOS MELHORES MÉTODOS PRA RESOLVER EXERCÍCIOS TÁTICOS NO XADREZ</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nQTaNBNdXww?si=4VWdNq-BKDQw8Z1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">MÉTODO PRA MELHORAR A AVALIAÇÃO TÁTICA NO XADREZ</p>
+            <button class="btn-concluido9" onclick="markCompleted9(this)">Concluir</button>
+        </div>
+    </div>
+</section>
+
+<div id="congratulations-modal9" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal9()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+<footer class="footer">
+    @108natan | @deyvid_luaa
+</footer>
+
+<script src="/intermediario/tatica.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

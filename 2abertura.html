@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Página 9 -->
+<section class="menu-grid" id="menu10">
+    <div class="circle-container10">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring10" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text10" id="percentage-text10">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wE0rLaZ2KZ0?si=90eTg45PX6U7H3zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">SISTEMA LONDON</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dv9h6klKCLE?si=HWr_IjjgY4nabQoH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">ABERTURA ITALIANA</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sUzByPtTjlU?si=GOYujahI6JqD27fZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> GAMBITO ESCOCÊS </p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iTiIvAqwezs?si=l8VkJCT6GCxOpNnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">ABERTURA RUY LOPEZ</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ORtnOxrDmgU?si=DPVz3I_fqsjOm0PU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DEFESA HOLANDESA</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xWA5Q-6mv_w?si=F3nj2RqqiwyWUqfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> ABERTURA DOS 4 CAVALOS</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x2po70geJ4o?si=O3Li_W8CzprFdDng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DEFESA SICILIANA DRAGÃO ACELERADO</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EQvbfdSyWPg?si=c05Kgc0iIXWIixQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DEFESA CARO KANN</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4XqFOq3j99U?si=NQz_KH09mCZ6ShPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> GAMBITO DA DAMA</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_zNWTebKDFM?si=5TiLGXneWp7hnCcJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">ABERTURA INGLESA</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C6Ah7gfbK78?si=WLcPlKaIacw_ZWU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title"> GAMBITO DA DAMA RECUSADO</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iIK6d1zcXQ4?si=fMAtnxPJwUMh5c4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DEFESA SICILIANA NAJDORF </p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+     
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FG8v-mRcJbI?si=mwBbumyA2EpnaPqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">GAMBITO DO REI</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+  
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j7jXBG-wLxg?si=qxw5DtUhZKitswcR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">DEFESA ÍNDIA DO REI</p>
+            <button class="btn-concluido10" onclick="markCompleted10(this)">Concluir</button>
+        </div>
+        
+       
+    </div>
+</section>
+
+<div id="congratulations-modal10" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal10()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+<footer class="footer">
+    @108natan | @deyvid_luaa
+</footer>
+
+<script src="/intermediario/abertura.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

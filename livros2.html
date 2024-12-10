@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Página 9 -->
+<section class="menu-grid" id="menu16">
+    <div class="circle-container16">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring16" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text16" id="percentage-text16">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TZZyiWT6LMg?si=s9bJUYp3RldlusYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 1: ATAQUES DESCOBERTOS</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/O_frL2edb6A?si=LeTMbBHnZjsHeRKm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 2: XEQUES DESCOBERTOS</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OvQFPgx2cAo?si=gAIB15oaNKVqqqp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 3: XEQUES DUPLOS</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/78mX5znDBz8?si=5F45yYgHPUIGr--4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 4: ATAQUE DUPLO (EXERCÍCIOS DE TÁTICA)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a0X1LUxy8A4?si=Aj7JRgl9fTCGMrIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 5: O ATAQUE DUPLO (GARFOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoQq28bH6Qo?si=LOe8NucQxo8FFTZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 6: GARFOS COMO COMBINAÇÕES</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xp4TtzZxQ-8?si=7iqUWmbizhivMjWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 7: GARFOS COMO COMBINAÇÕES (EXERCÍCIOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hjDVUrvL1rE?si=nIpTL1ml5cuWf6gN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 8: ATAQUES DUPLOS DE UM PEAO</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BVDJPKrDSIc?si=bJToSyI989au7K_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 9: CRAVADAS ABSOLUTAS</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sGHhsfH5vmI?si=zhOQHynUprG40ZPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 10: CRAVADAS ABSOLUTAS (EXERCÍCIOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yfu_CZmB5K0?si=VgYbEpjqcLJPWhyG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 11: CRAVADAS RELATIVAS</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SBDjjxMLbiY?si=voutLJc2G78gU01g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 12: CRAVADAS RELATIVAS (EXERCÍCIOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/01a3Jncp4-w?si=Q6sZSQBiUd6yU78J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 13: ESPETO</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hPi1MHAuqQg?si=Xu-kKYRTBfTLn93j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 14: ESPETO (EXERCÍCIOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ekd7k7vyqf4?si=GeWd38hb2NuBtnIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 15: AFOGAMENTO</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oavQktXrz28?si=3IdoNc6EbsZUUF09" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">AULA 16: AFOGAMENTO (EXERCÍCIOS)</p>
+            <button class="btn-concluido16" onclick="markCompleted16(this)">Concluir</button>
+        </div>
+    </div>
+</section>
+
+<div id="congratulations-modal16" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal16()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+<footer class="footer">
+    @108natan | @deyvid_luaa
+</footer>
+
+<script src="/intermediario/2livro.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+<!-- Página 9 -->
+<section class="menu-grid" id="menu12">
+    <div class="circle-container12">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+            <circle class="progress-ring12" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        </svg>
+        <div class="percentage-text12" id="percentage-text12">0%</div>
+    </div>
+
+    <div class="box-container-grid">
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aFp_4C5CN8Q?si=7A3OL3vCzVDzkCB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">TRÊS DICAS PARA ESCOLHER O MELHOR PLANO NO MEIO JOGO</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UBJcUXHfXk0?si=sGd96bRQhtpfCg7n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">3 PASSOS PARA ENTENDER O MEIO JOGO NO XADREZ</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FbwaBfSf3eM?si=QwGVSmDyIgx5rZQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O QUE FAZER NO MEIO JOGO DO XADREZ (PLANOS)</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s27TKZeVPDo?si=nSji4zWaXsShjjJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">COMO UM GRANDE MESTRE ESCOLHE UM PLANO NO XADREZ?</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wl0oU9kAqmM?si=2BYzJxy-vHtAl_4t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">OS 4 PASSOS PARA AVALIAR UMA POSIÇÃO DE XADREZ</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+        <div class="box-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/moKbBSkTyAE?si=zuhj8sQUAE7TdcfS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="title">O QUE DEVEMOS FAZER NO MEIO JOGO???</p>
+            <button class="btn-concluido12" onclick="markCompleted12(this)">Concluir</button>
+        </div>
+    </div>
+</section>
+
+<div id="congratulations-modal12" class="modal">
+    <div class="modal-content">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você completou todos os vídeos!
+          <span>Continue assim e aprenda mais.</span></p>
+        <button onclick="closeModal12()" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+<footer class="footer">
+    @108natan | @deyvid_luaa
+</footer>
+
+<script src="/intermediario/meiojogo.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

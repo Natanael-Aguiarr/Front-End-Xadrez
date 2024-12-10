@@ -1,9 +1,26 @@
 <link rel="stylesheet" href="style.css">
+
 <body class="light-mode">
 	<header class="header">
+
+		<!-- menu de acessibilidade -->
+		<script src="https://cdn.userway.org/widget.js" data-account="TtWACP0xRM"></script>
+		<!-- menu de acessibilidade -->
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4FX3TEY1M"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'G-Y4FX3TEY1M');
+		</script>
+		<!-- fim da parte de anlise de dados -->
+
 		<nav class="header__nav" aria-label="Main Navigation">
 			<div class="header__nav-container">
-				<a href="index.html" class="header__logo" aria-label="Xadrez para TDAH - Página inicial">
+				<a href="#" class="header__logo" aria-label="Xadrez para TDAH - Página inicial">
 					<div class="logo">
 						Xadrez <br />
 						para <br />
@@ -21,8 +38,7 @@
 					<a href="index.html" class="nav__link" role="menuitem">Início</a>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
-						aria-expanded="false">Jogar</a>
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">Jogar</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
 							<a href="https://www.chess.com/" target="_blank" class="dropdown__link"
@@ -44,40 +60,35 @@
 						<li class="dropdown__item" role="none">
 							<a href="intermediário.html" class="dropdown__link" role="menuitem">Intermediário</a>
 						</li>
-						<li class="dropdown__item" role="none">
-							<a href="avancado.html" class="dropdown__link" role="menuitem">Avançado</a>
-						</li>
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
-						aria-expanded="false">TV</a>
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">TV</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
 							<a href="https://drive.google.com/drive/folders/1egO427xG3J6UjJ9GPf9VlpDroAYTBe5g?usp=drive_link"
 								target="_blank" class="dropdown__link" role="menuitem">
-								Filmes <span>Parte-1</span>
+								Filmes <span>#1</span>
 							</a>
 						</li>
 						<li class="dropdown__item" role="none">
 							<a href="https://drive.google.com/drive/folders/1VzRYkEi-ZQcrv4G_UNC01BCXEL5t_aJ6?usp=drive_link"
 								target="_blank" class="dropdown__link" role="menuitem">
-								Filmes <span>Parte-2</span>
+								Filmes <span>#2</span>
 							</a>
 						</li>
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
-					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true"
-						aria-expanded="false">Fórum</a>
+					<a href="#" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">Fórum</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
 							<a href="https://chat.whatsapp.com/FI6G4y3W3YOBPnsbfK1hdx" target="_blank"
 								class="dropdown__link" role="menuitem">WhatsApp</a>
 						</li>
 						<li class="dropdown__item" role="none">
-							<a href="https://discord.gg/rFsefS4k" target="_blank"
-								class="dropdown__link" role="menuitem">Discord</a>
+							<a href="https://discord.gg/chess-club-br-pt-768096108165332992" target="_blank" class="dropdown__link"
+								role="menuitem">Discord</a>
 						</li>
 					</ul>
 				</li>
@@ -86,30 +97,30 @@
 						aria-expanded="false">Depoimentos</a>
 					<ul class="dropdown dropdown--menu" role="menu">
 						<li class="dropdown__item" role="none">
-							<a href="depoimento.html" class="dropdown__link" role="menuitem">Depoimento 1</a>
+							<a href="depoimento.html" class="dropdown__link" role="menuitem">Depoimento #1</a>
 						</li>
 						<li class="dropdown__item" role="none">
-							<a href="depoimento2.html" class="dropdown__link" role="menuitem">Depoimento 2</a>
+							<a href="depoimento2.html" class="dropdown__link" role="menuitem">Depoimento #2</a>
 						</li>
 						<li class="dropdown__item" role="none">
-							<a href="depoimento3.html" class="dropdown__link" role="menuitem">Depoimento 3</a>
+							<a href="depoimento3.html" class="dropdown__link" role="menuitem">Depoimento #3</a>
 						</li>
 					</ul>
 				</li>
 				<li class="nav__item nav__item--dropdown" role="none">
 					<a href="part7.html" class="nav__link" role="menuitem" aria-haspopup="true"
 						aria-expanded="false">Sobre</a>
-						<ul class="dropdown dropdown--menu" role="menu">
-							<li class="dropdown__item" role="none">
-								<a href="part7.html" class="dropdown__link" role="menuitem">Sobre nós</a>
-							</li>
-						</ul>
+					<ul class="dropdown dropdown--menu" role="menu">
+						<li class="dropdown__item" role="none">
+							<a href="part7.html" class="dropdown__link" role="menuitem">Sobre nós</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 			<button onclick="toggleMode()" id="themeToggle">
 				<span class="icon" id="themeIcon">🌞</span>
-			  </button>
-			  <button id="theme-toggle"></button>
+			</button>
+			<button id="theme-toggle"></button>
 
 		</nav>
 	</header>

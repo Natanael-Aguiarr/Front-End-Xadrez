@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="LogoXadrez.png" type="image/x-icon">
+        <title>Xadrez para TDAH</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+<body>
+  <header class="nav">
+    <nav id="menu-container" class="nav__menu">
+      <!-- Menu de navegação (se necessário) -->
+    </nav>
+  </header>
+
+    <section class="menu-grid" id="menu">
+     
+      <div class="circle-container">
+        <svg width="90" height="90" viewBox="0 0 150 150">
+          <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+          <circle class="progress-ring" cx="75" cy="75" r="70" stroke="#15be1a" stroke-width="10" fill="none" stroke-dasharray="439.82" stroke-dashoffset="439.82"/>
+        </svg>
+        
+        <div class="percentage-text" id="percentage-text">0%</div>
+    </div>
+      <div class="box-container-grid">
+            <div class="box-grid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/nTb-4F5W1_A?si=PzzANCDZIyIVlx3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="title">10 BENEFÍCIOS DO XADREZ PARA A SAÚDE MENTAL</p>
+                <button class="btn-concluido" onclick="markCompleted(this)">Concluir</button>
+            </div>
+            <div class="box-grid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cZMgqEWKbxY?si=2K6TEcsZ3UfvvXVh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="title">COMO O CÉREBRO RESPONDE AO XADREZ</p>
+                <button class="btn-concluido" onclick="markCompleted(this)">Concluir</button>
+            </div>
+            <div class="box-grid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/HbwfSjjANKk?si=Ua64UQW7ztdpTmo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="title">CONHEÇA OS BENEFÍCIOS DO XADREZ PARA CRIANÇAS E ADOLESCENTES</p>
+                <button class="btn-concluido" onclick="markCompleted(this)">Concluir</button>
+            </div>
+            <div class="box-grid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Qst2sSEqg?si=9d6yMjG-5MYxKmHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="title">MELHORE SUA CONCENTRAÇÃO, MEMÓRIA E RACIOCÍNIO COM XADREZ E ATIVIDADE AERÓBICA</p>
+                <button class="btn-concluido" onclick="markCompleted(this)">Concluir</button>
+            </div>
+            <div class="box-grid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CkhkZidsurk?si=wOK9oFE_nzDKF1gX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="title">O GAMBITO DA RAINHA, INTELIGÊNCIA HUMANA E O XADREZ</p>
+                <button class="btn-concluido" onclick="markCompleted(this)">Concluir</button>
+            </div>
+           
+      </div>
+
+  </section>
+
+  <div id="congratulations-modal" class="modal">
+    <div class="modal-content">
+      <h2>🎉 Parabéns! 🎉</h2>
+      <p> Você completou todos os vídeos!
+        <span>Continue assim e aprenda mais.</span></p>
+      <button onclick="closeModal()" class="close-button">Fechar</button>
+    </div>
+  </div>
+  
+<div id="celebration-container"></div>
+
+<audio id="completion-sound" src="tada-fanfare-a-6313.mp3" preload="auto"></audio>
+<audio id="mark-sound" src="concluido.mp4" preload="auto"></audio>
+
+
+
+  <footer class="footer">
+		@108natan | @deyvid_luaa
+	</footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
